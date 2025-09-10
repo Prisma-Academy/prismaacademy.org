@@ -1,5 +1,14 @@
 export const events = [
 	{
+		date: 'September 20, 2025',
+		title: '2025 PRISMA Youth Annual Career Meetup',
+		description:
+			'Where Dreams Meet Opportunities! Meet with professionals from different career streams including Business & Marketing, Information Technology, Social Science, Health Science, Law and Legal Studies, Entrepreneurship, and more. Stay tuned for updates on our speakers and the event program.',
+		imageUrl: 'images/events/2025-prisma-youth-annual-career-meetup.png',
+		imageAlt: '2025 PRISMA Youth Annual Career Meetup',
+		learnMoreUrl: 'https://prismaacademy.org/events'
+	},
+	{
 		date: 'June 14, 2025',
 		title: 'Criminology & Forensic Psychology Career Expo',
 		description:
