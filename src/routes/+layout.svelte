@@ -7,7 +7,7 @@
 
 </script>
   
-  <!-- <CountdownBanner /> -->
+  <CountdownBanner />
   <Navbar />
   
   <main data-sveltekit-reload={updated.current ? '' : 'off'}>
