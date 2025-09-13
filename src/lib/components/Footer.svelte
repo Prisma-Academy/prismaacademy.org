@@ -8,14 +8,14 @@
             </a>
             <h6 class="footer-brand-description">Together we can make a huge impact.</h6>
             <div class="footer-social-icons-wrapper">
-              <a href="https://www.instagram.com/prisma_academy_foundation/" target="_blank" class="footer-social-icon">
-                <i class="fab fa-instagram"></i>
+              <a href="https://www.instagram.com/prisma_academy_foundation/" target="_blank" class="footer-social-icon" aria-label="Visit our Instagram page">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="https://www.youtube.com/@Prisma" target="_blank" class="footer-social-icon">
-                <i class="fab fa-youtube"></i>
+              <a href="https://www.youtube.com/@Prisma" target="_blank" class="footer-social-icon" aria-label="Visit our YouTube channel">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
               </a>
-              <a href="https://x.com/PrismaAcademy" target="_blank" class="footer-social-icon">
-                <i class="fab fa-x-twitter"></i>
+              <a href="https://x.com/PrismaAcademy" target="_blank" class="footer-social-icon" aria-label="Visit our X profile">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
               </a>
             </div>
           </div>

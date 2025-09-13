@@ -36,7 +36,8 @@
 		}
 	});
 
-	const isEventOver = $derived(timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0);
+	// Show banner until event is actually over - for now always show since event is in future
+	const isEventOver = $derived(false);
 </script>
 
 {#if !isEventOver}
@@ -79,9 +80,11 @@
 		background: linear-gradient(135deg, var(--secondary) 0%, #0f5aa8 100%);
 		color: var(--white);
 		padding: 1rem 0;
-		position: sticky;
+		position: fixed;
 		top: 0;
-		z-index: 1000;
+		left: 0;
+		right: 0;
+		z-index: 999;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	}
 
@@ -174,56 +177,47 @@
 	}
 
 	@media screen and (max-width: 991px) {
-		.countdown-content {
-			flex-direction: column;
-			gap: 1rem;
-			text-align: center;
+		.countdown-banner {
+			padding: 1.5rem 0;
+			position: static;
+			background: linear-gradient(135deg, var(--secondary) 0%, #0f5aa8 100%);
 		}
-
-		.countdown-timer {
+		
+		.countdown-content {
+			flex-direction: row;
+			gap: 0.75rem;
+			align-items: center;
 			justify-content: center;
 		}
-
-		.countdown-title {
-			font-size: 1.1rem;
+		
+		.countdown-text {
+			display: none;
 		}
-
-		.countdown-number {
-			font-size: 1.25rem;
-		}
-	}
-
-	@media screen and (max-width: 567px) {
-		.countdown-banner {
-			padding: 0.75rem 0;
-		}
-
+		
 		.countdown-timer {
+			justify-content: center;
 			gap: 0.25rem;
 		}
-
+		
 		.countdown-unit {
-			min-width: 2.5rem;
+			min-width: 2rem;
 		}
-
+		
 		.countdown-number {
 			font-size: 1.1rem;
 		}
-
+		
 		.countdown-label {
 			font-size: 0.7rem;
 		}
-
+		
 		.countdown-separator {
 			font-size: 1.1rem;
 			margin: 0 0.1rem;
 		}
-
-		.countdown-title {
-			font-size: 1rem;
-		}
-
-		.countdown-subtitle {
+		
+		.countdown-button {
+			padding: 0.5rem 0.75rem;
 			font-size: 0.8rem;
 		}
 	}

@@ -4,6 +4,17 @@
 	import { events } from '$lib/data/events';
 </script>
 
+<style>
+	.commitment-content {
+		text-align: center;
+		align-items: center;
+	}
+
+	.commitment-content .paragraph-4 {
+		text-align: center;
+	}
+</style>
+
 <SEO
 	title="Prisma Academy – Empowering Future Generations"
 	description="Prisma Academy helps youth grow through education, integration, and career development in Canada."
@@ -72,28 +83,23 @@
 			</div>
 			<div data-w-id="f75e99dc-640d-9519-f558-60db2bc1f294" class="commitment-content">
 				<img src="images/Arrow-Yellow.png" loading="lazy" alt="" class="commitment-icon" />
-				<div>
-					<div class="big-title-commitment dark-color-text">Skills Development</div>
-					<p class="paragraph-4">
-						We are dedicated to promoting physical and mental well-being by providing essential
-						health resources and support to those in need.
-					</p>
-				</div>
+				<div class="big-title-commitment dark-color-text">Skills Development</div>
+				<p class="paragraph-4">
+					We provide career seminars, bootcamps, conferences for university students and recent grads in their respective fields.
+				</p>
 			</div>
 			<div data-w-id="f75e99dc-640d-9519-f558-60db2bc1f29b" class="commitment-content">
 				<img src="images/Arrow-Yellow.png" loading="lazy" alt="" class="commitment-icon" />
 				<div class="big-title-commitment dark-color-text">Mentorship</div>
 				<p class="paragraph-4">
-					We are dedicated to promoting physical and mental well-being by providing essential health
-					resources and support to those in need.
+					We have a network of professionals who donate their hours to engage with youth looking for career mentorship in Tech, Management, Marketing, Health Sciences, Project Mgmt, and other fields.
 				</p>
 			</div>
 			<div data-w-id="f75e99dc-640d-9519-f558-60db2bc1f2a1" class="commitment-content">
 				<img src="images/Arrow-Yellow.png" loading="lazy" alt="" class="commitment-icon" />
 				<div class="big-title-commitment dark-color-text">Unity Gatherings</div>
 				<p class="paragraph-4">
-					We are dedicated to promoting physical and mental well-being by providing essential health
-					resources and support to those in need.
+					We provide safe and nurturing social spaces, events, and activities for our members in following clubs: Movie, Music, Chess, Travel, and Writing.
 				</p>
 			</div>
 		</div>

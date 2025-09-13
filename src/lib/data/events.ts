@@ -6,7 +6,7 @@ export const events = [
 			'Where Dreams Meet Opportunities! Meet with professionals from different career streams including Business & Marketing, Information Technology, Social Science, Health Science, Law and Legal Studies, Entrepreneurship, and more. Stay tuned for updates on our speakers and the event program.',
 		imageUrl: 'images/events/2025-prisma-youth-annual-career-meetup.png',
 		imageAlt: '2025 PRISMA Youth Annual Career Meetup',
-		learnMoreUrl: 'https://prismaacademy.org/events'
+		learnMoreUrl: 'https://www.eventbrite.com/e/youth-annual-career-meetup-2025-tickets-1627035098779?aff=oddtdtcreator'
 	},
 	{
 		date: 'June 14, 2025',

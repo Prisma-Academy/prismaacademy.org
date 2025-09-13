@@ -13,7 +13,7 @@
 	<div class="base-container w-container">
 		<div class="contacts-wrapper-2">
 			<div class="half-width-container">
-				<img src="images/donation-hero.jpg" class="padded-image" />
+				<img src="images/donation-hero.jpg" class="padded-image" alt="Community members together" />
 			</div>
 			<div class="contacts-content-wrapper-2">
 				<div data-w-id="bb78cb9c-4786-e83f-44fa-48a0098c31cf" class="title-text">
