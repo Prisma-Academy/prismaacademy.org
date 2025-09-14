@@ -76,69 +76,19 @@
 				console.log('Initializing Webflow...');
 				webflowInitialized = true;
 
-				// Force destroy and rebuild
-				if (window.Webflow.destroy) {
-					console.log('Calling Webflow.destroy()');
-					window.Webflow.destroy();
-				}
-
-				// Full reinitialization
+				// Simple initialization without destroy/rebuild cycle
 				if (window.Webflow.ready) {
 					console.log('Calling Webflow.ready()');
 					window.Webflow.ready();
 				}
 
-				// Reinit interactions
-				if (window.Webflow.require) {
-					const ix2 = window.Webflow.require('ix2');
-					console.log('IX2 module:', ix2);
-					if (ix2) {
-						if (ix2.destroy) {
-							console.log('Calling ix2.destroy()');
-							ix2.destroy();
-						}
-						if (ix2.init) {
-							console.log('Calling ix2.init()');
-							ix2.init();
-						}
-					}
-
-					// Reinit other modules
-					const modules = ['navbar', 'dropdown', 'tabs', 'slider'];
-					modules.forEach(module => {
-						const mod = window.Webflow.require(module);
-						console.log(`Module ${module}:`, mod);
-						if (mod?.ready) {
-							console.log(`Calling ${module}.ready()`);
-							mod.ready();
-						}
-					});
-				}
-
-				// Force redraw and trigger scroll events
-				setTimeout(() => {
-					if (window.Webflow.redraw) {
-						window.Webflow.redraw.up();
-					}
-					// Trigger scroll events to activate scroll-based animations
-					window.dispatchEvent(new Event('scroll'));
-					window.dispatchEvent(new Event('resize'));
-
-					// Force check of elements in viewport
-					if (window.Webflow.require) {
-						const ix2 = window.Webflow.require('ix2');
-						if (ix2 && ix2.store && ix2.store.dispatch) {
-							// Trigger viewport detection
-							ix2.store.dispatch({ type: 'VIEWPORT_WIDTH_CHANGED' });
-						}
-					}
-				}, 200);
 			}
 
 			// Try initialization with fallbacks
 			function tryInit() {
 				if (window.Webflow && !webflowInitialized) {
-					initWebflow();
+					// Wait longer for all elements to be fully rendered
+					setTimeout(initWebflow, 500);
 				} else if (!webflowInitialized) {
 					// Retry after a short delay if Webflow not loaded yet
 					setTimeout(tryInit, 100);
@@ -149,13 +99,18 @@
 			if (document.readyState === 'loading') {
 				document.addEventListener('DOMContentLoaded', tryInit);
 			} else {
-				tryInit();
+				// Use window load instead of immediate execution to ensure all assets are loaded
+				if (document.readyState === 'complete') {
+					tryInit();
+				} else {
+					window.addEventListener('load', tryInit, { once: true });
+				}
 			}
 
 			// Reset flag on SvelteKit navigation to allow re-init
 			window.addEventListener('sveltekit:start', () => {
 				webflowInitialized = false;
-				setTimeout(tryInit, 100);
+				setTimeout(tryInit, 500);
 			});
 		</script>
 	</body>
