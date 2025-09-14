@@ -78,27 +78,40 @@
 
 				// Force destroy and rebuild
 				if (window.Webflow.destroy) {
+					console.log('Calling Webflow.destroy()');
 					window.Webflow.destroy();
 				}
 
 				// Full reinitialization
 				if (window.Webflow.ready) {
+					console.log('Calling Webflow.ready()');
 					window.Webflow.ready();
 				}
 
 				// Reinit interactions
 				if (window.Webflow.require) {
 					const ix2 = window.Webflow.require('ix2');
+					console.log('IX2 module:', ix2);
 					if (ix2) {
-						if (ix2.destroy) ix2.destroy();
-						if (ix2.init) ix2.init();
+						if (ix2.destroy) {
+							console.log('Calling ix2.destroy()');
+							ix2.destroy();
+						}
+						if (ix2.init) {
+							console.log('Calling ix2.init()');
+							ix2.init();
+						}
 					}
 
 					// Reinit other modules
 					const modules = ['navbar', 'dropdown', 'tabs', 'slider'];
 					modules.forEach(module => {
 						const mod = window.Webflow.require(module);
-						if (mod?.ready) mod.ready();
+						console.log(`Module ${module}:`, mod);
+						if (mod?.ready) {
+							console.log(`Calling ${module}.ready()`);
+							mod.ready();
+						}
 					});
 				}
 
