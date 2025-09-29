@@ -1,13 +1,11 @@
 <script>
     import Navbar from '$lib/components/Navbar.svelte';
     import Footer from '$lib/components/Footer.svelte';
-    import CountdownBanner from '$lib/components/CountdownBanner.svelte';
     import { updated } from '$app/state';
     let { children } = $props();
 
 </script>
   
-  <CountdownBanner />
   <Navbar />
   
   <main data-sveltekit-reload={updated.current ? '' : 'off'}>
@@ -23,7 +21,7 @@
   }
   
   :global(.navbar) {
-    top: 72px !important;
+    top: 0 !important;
     z-index: 1000 !important;
   }
   
@@ -37,7 +35,7 @@
   }
   
   :global(main) {
-    padding-top: 135px;
+    padding-top: 63px;
   }
   
   :global(.primary-button) {
