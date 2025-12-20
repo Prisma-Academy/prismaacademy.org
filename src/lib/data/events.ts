@@ -1,5 +1,32 @@
 export const events = [
 	{
+		date: 'January 10, 2026',
+		title: 'Nursing in Canada: Education and Career Pathways',
+		description:
+			'Explore nursing opportunities in Canada! Join experienced nurses and professionals as they discuss education pathways, licensing requirements, language standards, regulatory bodies, job prospects, compensation, and advancement opportunities. Perfect for both domestic and international applicants. Free admission.',
+		imageUrl: 'images/events/nursing-in-canada-2026.png',
+		imageAlt: 'Nursing in Canada: Education and Career Pathways',
+		learnMoreUrl: 'https://www.eventbrite.com/e/nursing-in-canada-education-and-career-pathways-tickets-1978705177451?aff=oddtdtcreator'
+	},
+	{
+		date: 'October 19, 2025',
+		title: 'Candle Making Workshop',
+		description:
+			'Join us for a hands-on candle making experience! Learn fragrance blending, color design, and safe pouring techniques while creating custom candles to take home. Perfect for beginners and craft lovers alike. Free admission.',
+		imageUrl: 'images/events/candle-making-workshop-2025.jpg',
+		imageAlt: 'Candle Making Workshop 2025',
+		learnMoreUrl: 'https://www.eventbrite.com/e/candle-making-workshop-tickets-1810037895069?aff=oddtdtcreator'
+	},
+	{
+		date: 'October 5, 2025',
+		title: 'Chess Blitz Tournament',
+		description:
+			'Join our Chess Blitz Tournament! Compete for a $1 CAD prize while enjoying pizza and snacks. Time: 12:00 PM - 03:00 PM. Location: Prisma Academy - 1 Yorkgate Blvd, Unit 340, North York, ON M9L 2Y8.',
+		imageUrl: 'images/events/chess-tournament-2025.png',
+		imageAlt: 'Chess Blitz Tournament 2025',
+		learnMoreUrl: 'https://prismaacademy.org'
+	},
+	{
 		date: 'September 20, 2025',
 		title: '2025 PRISMA Youth Annual Career Meetup',
 		description:
