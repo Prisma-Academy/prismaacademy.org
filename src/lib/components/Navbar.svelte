@@ -13,7 +13,7 @@
 		<div class="nav-menu-wrapper">
 			<a href="/" class="brand-logo w-nav-brand">
 				<img
-					src="images/prisma-academy-logo-2.png"
+					src="/images/prisma-academy-logo-2.png"
 					alt="Prisma Academy Logo"
 					class="logo-header"
 					height="30"
@@ -24,14 +24,14 @@
 				<div class="tablet-menu">
 					<a href="/" class="brand-tablet w-nav-brand">
 						<img
-							src="images/prisma-academy-logo-2.png"
+							src="/images/prisma-academy-logo-2.png"
 							alt="Logo Dark Text"
 							height="30"
 							class="logo-header"
 						/>
 					</a>
 					<div class="close-menu-button w-nav-button">
-						<img src="images/close-btn.svg" loading="lazy" alt="icon" class="nav-close-icon" />
+						<img src="/images/close-btn.svg" loading="lazy" alt="icon" class="nav-close-icon" />
 					</div>
 				</div>
 
@@ -57,7 +57,7 @@
 
 			<div class="menu-button w-nav-button">
 				<img
-					src="images/menu-btn.svg"
+					src="/images/menu-btn.svg"
 					loading="lazy"
 					alt="icon"
 					height="16"

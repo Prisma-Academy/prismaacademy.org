@@ -4,7 +4,7 @@
         <div class="footer-wrapper">
           <div class="footer-brand-wrapper">
             <a href="/" class="footer-brand w-nav-brand">
-              <img src="images/prisma-academy-logo-2.png" alt="Footer Logo" height="30" class="footer-logo" />
+              <img src="/images/prisma-academy-logo-2.png" alt="Footer Logo" height="30" class="footer-logo" />
             </a>
             <h6 class="footer-brand-description">Together we can make a huge impact.</h6>
             <div class="footer-social-icons-wrapper">

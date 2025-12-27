@@ -51,6 +51,11 @@
     box-sizing: border-box;
   }
 
+  :global(.base-container) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
   @media screen and (max-width: 991px) {
     :global(.navbar) {
       position: relative !important;
