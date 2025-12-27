@@ -82,26 +82,34 @@
 		<div class="about-us-wrapper">
 			<div
 				data-w-id="4e510bc2-34ae-11e9-5790-a85795a11908"
-				
-				class="w-layout-grid about-images-wrapper"
+				class="about-images-container"
 			>
 				<img
-					src="images/driftwood-canoe.jpg"
+					src="images/about-us-group.jpg"
 					loading="lazy"
 					width="Auto"
-					sizes="(max-width: 991px) 100vw, (max-width: 1279px) 48vw, (max-width: 1439px) 53vw, (max-width: 1919px) 698.5px, 687.5px"
-					alt=""
-					srcset="images/driftwood-canoe-p-500.jpg 500w, images/driftwood-canoe-p-800.jpg 800w, images/driftwood-canoe.jpg 1040w"
-					class="small-image-about"
-				/><img
-					src="images/WhatsApp-Image-2018-01-27-at-9.52.55-AM.jpeg"
-					loading="lazy"
-					id="w-node-b81e4738-1d6a-4568-421c-28818d95d0a2-e9c2dae0"
-					sizes="(max-width: 991px) 100vw, (max-width: 1279px) 48vw, (max-width: 1439px) 53vw, (max-width: 1919px) 698.5px, 687.5px"
-					alt=""
-					srcset="images/WhatsApp-Image-2018-01-27-at-9.52.55-AM-p-500.jpeg 500w, images/WhatsApp-Image-2018-01-27-at-9.52.55-AM-p-800.jpeg 800w, images/WhatsApp-Image-2018-01-27-at-9.52.55-AM.jpeg 960w"
-					class="big-image-about"
+					alt="Prisma Academy Group"
+					class="large-image-about-top"
 				/>
+				<div class="about-images-bottom-row">
+					<img
+						src="images/driftwood-canoe.jpg"
+						loading="lazy"
+						width="Auto"
+						sizes="(max-width: 991px) 100vw, (max-width: 1279px) 48vw, (max-width: 1439px) 53vw, (max-width: 1919px) 698.5px, 687.5px"
+						alt=""
+						srcset="images/driftwood-canoe-p-500.jpg 500w, images/driftwood-canoe-p-800.jpg 800w, images/driftwood-canoe.jpg 1040w"
+						class="small-image-about"
+					/>
+					<img
+						src="images/WhatsApp-Image-2018-01-27-at-9.52.55-AM.jpeg"
+						loading="lazy"
+						sizes="(max-width: 991px) 100vw, (max-width: 1279px) 48vw, (max-width: 1439px) 53vw, (max-width: 1919px) 698.5px, 687.5px"
+						alt=""
+						srcset="images/WhatsApp-Image-2018-01-27-at-9.52.55-AM-p-500.jpeg 500w, images/WhatsApp-Image-2018-01-27-at-9.52.55-AM-p-800.jpeg 800w, images/WhatsApp-Image-2018-01-27-at-9.52.55-AM.jpeg 960w"
+						class="small-image-about"
+					/>
+				</div>
 				<div class="title-about-us">
 					<p class="dark-paragraph">
 						We believe in the power of community and the difference we can make when we come
@@ -130,3 +138,45 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.about-images-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.large-image-about-top {
+		width: 100%;
+		border-radius: 8px;
+		object-fit: cover;
+		max-height: 500px;
+	}
+
+	.about-images-bottom-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+	}
+
+	.about-images-bottom-row .small-image-about {
+		width: 100%;
+		border-radius: 8px;
+		object-fit: cover;
+		height: 300px;
+	}
+
+	@media screen and (max-width: 767px) {
+		.about-images-bottom-row {
+			grid-template-columns: 1fr;
+		}
+
+		.large-image-about-top {
+			max-height: 300px;
+		}
+
+		.about-images-bottom-row .small-image-about {
+			height: 250px;
+		}
+	}
+</style>

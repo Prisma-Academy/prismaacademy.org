@@ -35,6 +35,8 @@
 					imageUrl={event.imageUrl}
 					imageAlt={event.imageAlt}
 					learnMoreUrl={event.learnMoreUrl}
+					slug={event.slug}
+					photos={event.photos}
 				/>
 			{/each}
 		</ul>

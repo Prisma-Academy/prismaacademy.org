@@ -5,6 +5,8 @@
   export let imageUrl: string;
   export let imageAlt: string = '';
   export let learnMoreUrl: string;
+  export let slug: string;
+  export let photos: string[] = [];
 </script>
 
 <li class="list-item list-item-full-width">
@@ -23,6 +25,29 @@
     <p class="paragraph-8">
       {@html description}
     </p>
-    <a href={learnMoreUrl} class="event-learn-more-button">Learn More</a>
+    <div class="event-buttons">
+      <a href={learnMoreUrl} class="event-learn-more-button">Learn More</a>
+      {#if photos && photos.length > 0}
+        <a href="/events/{slug}" class="event-learn-more-button event-photos-button">View Photos</a>
+      {/if}
+    </div>
   </div>
 </li>
+
+<style>
+  .event-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .event-photos-button {
+    background-color: #f4a261;
+    border-color: #f4a261;
+  }
+
+  .event-photos-button:hover {
+    background-color: #e76f51;
+    border-color: #e76f51;
+  }
+</style>
