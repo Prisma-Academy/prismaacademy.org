@@ -4,7 +4,7 @@
   export let description: string;
   export let imageUrl: string;
   export let imageAlt: string = '';
-  export let learnMoreUrl: string;
+  export let learnMoreUrl: string | undefined = undefined;
   export let slug: string;
   export let photos: string[] = [];
 </script>
@@ -26,7 +26,9 @@
       {@html description}
     </p>
     <div class="event-buttons">
-      <a href={learnMoreUrl} class="event-learn-more-button">Learn More</a>
+      {#if learnMoreUrl}
+        <a href={learnMoreUrl} class="event-learn-more-button">Learn More</a>
+      {/if}
       {#if photos && photos.length > 0}
         <a href="/events/{slug}" class="event-learn-more-button event-photos-button">View Photos</a>
       {/if}

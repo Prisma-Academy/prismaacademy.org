@@ -11,6 +11,27 @@ export const events = [
 		photos: []
 	},
 	{
+		date: 'October 25, 2025',
+		title: 'Travel Club: Hiking Day at Island Lake',
+		description:
+			'Join Prisma Travel Club for a hiking adventure at Island Lake! Enjoy nature, fresh air, and great company. Starting at 11:00 AM from Island Lake Conversation Area. Ticket: CAD 8.',
+		imageUrl: 'images/events/hiking-island-lake-2025.jpg',
+		imageAlt: 'Travel Club Hiking Day at Island Lake',
+		slug: 'hiking-island-lake-2025',
+		photos: []
+	},
+	{
+		date: 'May 3, 2025',
+		title: 'Let\'s Grow Something Beautiful: Gardening Workshop',
+		description:
+			'Get your hands dirty for a cleaner, brighter future! Join us for a hands-on gardening workshop in partnership with YourLeaf. Learn planting, care techniques, and sustainable practices. Location: 1210 Phillip Murray Ave, Oshawa. Time: 1:00-3:00 PM. Register at yourleaf.org/events',
+		imageUrl: 'images/events/gardening-workshop-2025.jpg',
+		imageAlt: 'Let\'s Grow Something Beautiful Gardening Workshop',
+		learnMoreUrl: 'https://yourleaf.org/events',
+		slug: 'gardening-workshop-2025',
+		photos: []
+	},
+	{
 		date: 'October 19, 2025',
 		title: 'Candle Making Workshop',
 		description:

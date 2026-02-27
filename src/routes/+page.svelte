@@ -183,7 +183,7 @@
 	<h1 class="heading-5">Recent and Upcoming Events</h1>
 	<div class="w-layout-blockcontainer base-container w-container">
 		<ul role="list" class="list">
-			{#each events.slice(0, 3) as event}
+			{#each events.slice(0, 5) as event}
 				<EventCard
 					date={event.date}
 					title={event.title}
