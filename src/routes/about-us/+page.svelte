@@ -139,6 +139,17 @@
 	</div>
 </section>
 
+<section class="section financial-reports-section">
+	<div class="w-layout-blockcontainer base-container w-container">
+		<p class="financial-reports-text">
+			<a href="/docs/2025-Financial-Reports.pdf" target="_blank" rel="noopener noreferrer" class="financial-reports-link">
+				Financial Reports
+			</a>
+			— 2025 Annual Financial Report (PDF)
+		</p>
+	</div>
+</section>
+
 <style>
 	.about-images-container {
 		display: flex;
@@ -164,6 +175,27 @@
 		border-radius: 8px;
 		object-fit: cover;
 		height: 300px;
+	}
+
+	.financial-reports-section {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
+
+	.financial-reports-text {
+		font-size: 0.875rem;
+		color: #666;
+		text-align: center;
+	}
+
+	.financial-reports-link {
+		color: #666;
+		font-weight: 600;
+		text-decoration: underline;
+	}
+
+	.financial-reports-link:hover {
+		color: #333;
 	}
 
 	@media screen and (max-width: 767px) {

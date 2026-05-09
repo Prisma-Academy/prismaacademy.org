@@ -8,7 +8,7 @@ export const events = [
 		imageAlt: 'Chess Club Meetings 2026',
 		learnMoreUrl: 'https://www.eventbrite.com/e/chess-club-meetings-tickets-1986949604755?aff=oddtdtcreator',
 		slug: 'chess-club-meetings-2026',
-		photos: []
+		photos: ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg']
 	},
 	{
 		date: 'January 10, 2026',
