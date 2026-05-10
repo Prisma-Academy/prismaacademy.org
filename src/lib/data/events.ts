@@ -1,15 +1,15 @@
 export const events = [
-	{
-		date: 'April 12, 2026',
-		title: 'Chess Club Meetings',
-		description:
-			'Join us for biweekly chess club meetings! Each session features an educational segment to sharpen your chess skills, followed by fun games and friendly competition. All skill levels are welcome. Snacks & refreshments will be provided. Time: 12:00 PM - 03:00 PM. Next meetings: April 12, April 26, May 10, May 24, June 7. Location: Prisma Academy - 5109 Steeles Avenue West, Unit 340, Toronto, ON M9L 2Y8. Free admission.',
-		imageUrl: 'images/events/chess-club-meetings-2026.jpg',
-		imageAlt: 'Chess Club Meetings 2026',
-		learnMoreUrl: 'https://www.eventbrite.com/e/chess-club-meetings-tickets-1986949604755?aff=oddtdtcreator',
-		slug: 'chess-club-meetings-2026',
-		photos: ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg']
-	},
+	// {
+	// 	date: 'April 12, 2026',
+	// 	title: 'Chess Club Meetings',
+	// 	description:
+	// 		'Join us for biweekly chess club meetings! Each session features an educational segment to sharpen your chess skills, followed by fun games and friendly competition. All skill levels are welcome. Snacks & refreshments will be provided. Time: 12:00 PM - 03:00 PM. Next meetings: April 12, April 26, May 10, May 24, June 7. Location: Prisma Academy - 5109 Steeles Avenue West, Unit 340, Toronto, ON M9L 2Y8. Free admission.',
+	// 	imageUrl: 'images/events/chess-club-meetings-2026.jpg',
+	// 	imageAlt: 'Chess Club Meetings 2026',
+	// 	learnMoreUrl: 'https://www.eventbrite.com/e/chess-club-meetings-tickets-1986949604755?aff=oddtdtcreator',
+	// 	slug: 'chess-club-meetings-2026',
+	// 	photos: ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg']
+	// },
 	{
 		date: 'January 10, 2026',
 		title: 'Nursing in Canada: Education and Career Pathways',
